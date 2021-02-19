@@ -1,7 +1,6 @@
 console.log('yep')
 import mongooseConnection from '../../backend/mongooseConnection'
 import userModel from '../../backend/schemas/userModel'
-// import { IUserSchema } from '../../../next-redux-obs/backend/schemas/userModel.interface';
 
 const createUser = async (req, res) => {
     const db = await mongooseConnection()
