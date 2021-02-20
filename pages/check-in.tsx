@@ -13,7 +13,6 @@ const congratulations = name => <>
         <h3>You have successfully checked in👍🏼</h3>
         <br/>
     
-    
         <h4>browse <Link href='/'>
             <a className="link">checked in people</a>
         </Link>

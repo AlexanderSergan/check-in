@@ -30,7 +30,9 @@ a {
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
+  justify-content: start;
+
   align-items: center;
 }
 
@@ -100,7 +102,7 @@ a {
 
 .card {
   margin: 1rem;
-  flex-basis: 45%;
+  /* flex-basis: 45%; */
   padding: 1.5rem;
   text-align: left;
   color: inherit;
@@ -132,12 +134,12 @@ a {
   height: 1em;
 }
 
-@media (max-width: 600px) {
+/* @media (max-width: 600px) { */
   .grid {
     width: 100%;
     flex-direction: column;
   }
-}
+/* } */
 
 
 @media (max-width: 600px) {
