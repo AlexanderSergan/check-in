@@ -7,15 +7,18 @@ import React, { Fragment, useState } from 'react';
 
 const congratulations = name => <>
 
-    <h3>Thanks, {name}!🎉</h3>
-    <h3>You have successfully checked in👍🏼</h3>
-    <br/>
-
-
-    <h4>browse <Link href='/'>
-        <a className="link">checked in people</a>
-    </Link>
-    </h4>
+<div className="fade-in">
+    
+        <h3>Thanks, {name}!🎉</h3>
+        <h3>You have successfully checked in👍🏼</h3>
+        <br/>
+    
+    
+        <h4>browse <Link href='/'>
+            <a className="link">checked in people</a>
+        </Link>
+        </h4>
+</div>
 
 </>
 
@@ -101,7 +104,7 @@ const CheckIn = () => {
     const [checkInSuccess, setCheckInSuccess] = useState(false)
     
     return <>
-        <div className="container main check-in">
+        <div className="container main check-in fade-in">
 
             { checkInSuccess ? 
                  congratulations(name)
