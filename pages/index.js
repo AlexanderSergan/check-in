@@ -26,9 +26,6 @@ export default function Home() {
       </Head>
 
       <main className='main'>
-        {/* <h1 className='title'>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1> */}
 
         <p className='description'>
           Checked in people list:
@@ -50,11 +47,7 @@ export default function Home() {
       </main>
 
       <footer className='footer'>
-        <a
-          // href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          // target="_blank"
-          // rel="noopener noreferrer"
-        >
+        <a>
           Made with ❤️ by Alexander@200kph
         </a>
       </footer>
