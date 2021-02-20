@@ -13,6 +13,7 @@
     "@atlaskit/form": "^8.2.0",
     "@atlaskit/spinner": "^15.0.6",
     "@atlaskit/textfield": "^5.0.0",
+    "@types/mongoose": "^5.10.3",
     "fetch": "^1.1.0",
     "mongoose": "^5.11.17",
     "next": "10.0.7",

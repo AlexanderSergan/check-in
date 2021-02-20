@@ -3,12 +3,15 @@ import { useEffect, useState } from 'react'
 import styles from '../styles/Home.module.css'
 
 const fetchUsers = async () => {
- const res = await fetch('api/user')
+  const res = await fetch('api/user')
   const data = res.json()
   return data
 }
-export default function Home() {
 
+const dateString = date => ` ${date.toLocaleTimeString()} ${date.toDateString()}`
+
+export default function Home() {
+  
   const [people, setPeople] = useState([])
 
   useEffect(async () => {
@@ -34,11 +37,15 @@ export default function Home() {
         <div className='grid'>
 
           {
-            people.map( ({ name, phone}) => <>
+            people.sort((a, b) => new Date(a.date) - new Date(b.date)).map( ({ name, phone, _id,  checkInDate}) => <>
             
-            <div className='card'>
-              <h3>{name}</h3>
-              <p>{phone}</p>
+            <div className='card' key={_id}>
+              <div className='top-bar'>
+                  <h3>{name}</h3>
+                  <h4>{phone}</h4>
+                  <p> { dateString(new Date( checkInDate ))}</p>
+              </div>
+              <p></p>
             </div>
             </>)
           }

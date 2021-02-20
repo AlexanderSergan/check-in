@@ -6,9 +6,10 @@ const createUser = async (req, res) => {
     const db = await mongooseConnection()
     const { body: { name, phone }  } = req
 
+    const usr = { name, phone, checkInDate: new Date() } 
 
     try {
-        const created = await userModel.create({ name, phone, checkInDate: new Date()})
+        const created = await userModel.create(usr)
         res.status(201).json(created)
     } catch (error) {
         res.status(406).json(error)
