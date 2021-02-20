@@ -197,3 +197,18 @@ a {
     padding: 0;
     margin: 0;
 }
+
+@media (max-width: 600px) {
+
+  .description {
+    font-size: 2rem;
+  }
+
+  .card {
+    width: 90%;
+  }
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}
