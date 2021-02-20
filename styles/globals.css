@@ -181,3 +181,19 @@ a {
     opacity: 1;
   }
 }
+
+.main {
+  padding-top: 3rem;
+  width: 100%;
+}
+
+.card {
+  width: 100%;
+  max-width: 600px;
+}
+.description {
+    line-height: 1.5;
+    font-size: 2.5rem;
+    padding: 0;
+    margin: 0;
+}
