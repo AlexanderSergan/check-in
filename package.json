@@ -8,10 +8,17 @@
     "start": "next start"
   },
   "dependencies": {
+    "@atlaskit/button": "^15.1.4",
+    "@atlaskit/css-reset": "^6.0.5",
+    "@atlaskit/form": "^8.2.0",
+    "@atlaskit/spinner": "^15.0.6",
+    "@atlaskit/textfield": "^5.0.0",
+    "fetch": "^1.1.0",
     "mongoose": "^5.11.17",
     "next": "10.0.7",
     "react": "17.0.1",
     "react-dom": "17.0.1",
+    "styled-components": "^3.2",
     "typescript": "^4.1.5"
   },
   "devDependencies": {
